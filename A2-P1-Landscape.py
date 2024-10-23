@@ -20,9 +20,9 @@ def main():
     squareFoot = length * width
 
     if squareFoot < 5000:
-    squareFootcost = 500
+        squareFootcost = 500
     elif squareFoot >= 5000:
-    squareFootcost = 0
+        squareFootcost = 0
 
     #gather grass type
     grassStyle = input("Please enter the type of grass you want to use (fescue, bentgrass, campus): ")
@@ -31,11 +31,11 @@ def main():
     campus = 0.01
 
     if grassStyle == "fescue":
-    cost = fescue 
+        cost = fescue 
     elif grassStyle == "bentgrass": 
-    cost = bentgrass   
+            cost = bentgrass   
     elif grassStyle == "campus":
-    cost = campus
+            cost = campus
 
     #calculate grasscost with square feet
     grassCost = squareFoot * cost
@@ -44,9 +44,9 @@ def main():
     numberOfTrees = int(input("Please the number of trees that you would like to have planted: "))
 
     if numberOfTrees == 0:
-    treeCost = 0
+        treeCost = 0
     else:
-    treeCost = numberOfTrees * 100
+        treeCost = numberOfTrees * 100
 
     #calculate grand total cost
     grandTotal = baseCharge + squareFootcost + grassCost + float(treeCost)
